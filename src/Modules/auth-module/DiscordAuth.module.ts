@@ -7,11 +7,8 @@ import { DiscordAuthService } from 'src/Services/DiscordServices/auth/DiscordAut
 import { UserService } from 'src/Services/DiscordServices/user/user.service';
 
 @Module({
-    imports:[
-        SwaggerModule,
-        HttpModule
-    ],
-    controllers:[ DiscordAuthController],
-    providers:[DiscordAuthService,UserService, AuthGuard]
+  imports: [SwaggerModule, HttpModule],
+  controllers: [DiscordAuthController],
+  providers: [DiscordAuthService, UserService, AuthGuard],
 })
 export class DiscordAuthModule {}

@@ -13,9 +13,9 @@ import { UserService } from './Services/DiscordServices/user/user.service';
       isGlobal: true,
     }),
     DiscordAuthModule,
-    HttpModule
+    HttpModule,
   ],
   controllers: [],
-  providers: [AppService,DiscordAuthService,UserService],
+  providers: [AppService, DiscordAuthService, UserService],
 })
 export class AppModule {}
